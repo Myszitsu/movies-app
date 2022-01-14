@@ -1,0 +1,34 @@
+header {
+   .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem;
+      background-color: var(--bg-color-light);
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+      &__logo {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+         img {
+            width: 2.5rem;
+            border-radius: 2px;
+         }
+      }
+
+      &__links {
+         list-style: none;
+         display: flex;
+         justify-content: center;
+
+         padding-inline: 1rem;
+         gap: 1rem;
+
+         li {
+            width: max-content;
+         }
+      }
+   }
+}
