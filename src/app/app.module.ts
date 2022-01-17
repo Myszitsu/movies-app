@@ -8,8 +8,11 @@ import { FooterComponent } from './shared/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
 import { MoviesComponent } from './pages/movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SliderComponent } from './components/slider/slider.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
+import { CardComponent } from './components/card/card.component';
+import { TrendingMoviesComponent } from './components/trending-movies/trending-movies.component'
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
     FooterComponent,
     HomeComponent,
     MoviesComponent,
+    CarouselComponent,
     SliderComponent,
+    CardComponent,
+    TrendingMoviesComponent,
   ],
   imports: [
     BrowserModule,

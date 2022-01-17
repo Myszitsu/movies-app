@@ -1,22 +1,17 @@
-<div class="slider">
-   <ng-container *ngFor="let item of items; let i = index">
-      <div class="slide" *ngIf="i === currentSlideIndex" @fade>
-         <img
-            [src]="'https://image.tmdb.org/t/p/original/' + item.backdrop_path"
-            [alt]="item.title + ' image'"
-         />
-         <div class="slide__shadow"></div>
-         <div class="slide__info">
-            <h2 class="slide__title">{{ item.title }}</h2>
-            <div class="slide__meta">
-               <span class="slide__star m-icon">star</span>
-               <span class="slide__rating">{{item.vote_average}}</span>
-               <span>/10</span>
-               <span class="slide__reviews">{{item.vote_count}} Reviews</span>
-               <span>{{item.release_date | date: 'yyyy'}}</span>
-            </div>
-            <p class="slide__description">{{item.overview}}</p>
-         </div>
+<section class="slider" [id]="id">
+   <h2 class="slider__title">{{title}}</h2>
+   <div class="slider__observer-area"></div>
+   <div class="slider__scroll-container">
+      <div class="cards" >
+         <ng-container *ngFor="let item of items">
+            <card [itemData]="item"></card>
+         </ng-container>
       </div>
-   </ng-container>
-</div>
+   </div>
+   <button class="slider__btn slider__btn--left m-icon">
+      arrow_back
+   </button>
+   <button class="slider__btn slider__btn--right m-icon">
+      arrow_forward
+   </button>
+</section>
