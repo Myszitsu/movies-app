@@ -130,7 +130,9 @@ p {
 }
 
 @media (pointer: coarse) {
-   .card {
-      grid-column: span 6;
+   .slider {
+      &__btn {
+         display: none;
+      }
    }
 }
