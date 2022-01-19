@@ -10,9 +10,8 @@ import { MoviesComponent } from './pages/movies/movies.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { SliderComponent } from './components/slider/slider.component';
-import { CardComponent } from './components/card/card.component';
-import { TrendingMoviesComponent } from './components/trending-movies/trending-movies.component'
+import { ItemBannerComponent } from './components/item-banner/item-banner.component';
+import { ItemComponent } from './components/item/item.component';
 
 @NgModule({
   declarations: [
@@ -22,9 +21,8 @@ import { TrendingMoviesComponent } from './components/trending-movies/trending-m
     HomeComponent,
     MoviesComponent,
     CarouselComponent,
-    SliderComponent,
-    CardComponent,
-    TrendingMoviesComponent,
+    ItemBannerComponent,
+    ItemComponent,
   ],
   imports: [
     BrowserModule,

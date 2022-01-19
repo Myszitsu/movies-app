@@ -7,6 +7,7 @@ import {
 } from '@angular/animations';
 import { Component, Input, OnInit } from '@angular/core';
 import { Movie } from '../../models/movie';
+import { IMAGE_SIZES } from '../../constants/image-sizes';
 
 @Component({
    selector: 'carousel',
@@ -22,12 +23,12 @@ import { Movie } from '../../models/movie';
 export class CarouselComponent implements OnInit {
    @Input()
    items: Movie[] = [];
-
+   readonly imageSizes = IMAGE_SIZES;
    currentSlideIndex: number = 0;
 
    ngOnInit(): void {
       setInterval(() => {
          this.currentSlideIndex = ++this.currentSlideIndex % this.items.length;
-      }, 8000);
+      }, 7000);
    }
 }

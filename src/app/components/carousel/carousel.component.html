@@ -2,7 +2,7 @@
    <ng-container *ngFor="let item of items; let i = index">
       <div class="slide" *ngIf="i === currentSlideIndex" @fade>
          <img
-            [src]="'https://image.tmdb.org/t/p/original/' + item.backdrop_path"
+            [src]="imageSizes.backdrop_sizes.original + item.backdrop_path"
             [alt]="item.title + ' image'"
          />
          <div class="slide__shadow"></div>

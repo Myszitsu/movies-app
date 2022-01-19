@@ -12,6 +12,14 @@ section {
    padding: 1rem;
 }
 
+.title {
+   padding: 1rem;
+   background-color: var(--bg-color-light);
+   border-radius: .5rem;
+   margin: 2rem 1rem 1rem 1rem;
+}
+
+
 
 @media (min-width: 30rem) {
    .grid {
@@ -24,6 +32,13 @@ section {
       padding-inline: 1.5rem;
       grid-template-columns: repeat(3, 1fr);
    }
+
+   .title {
+      padding: 1rem 1.5rem;
+      margin: 1.5rem;
+      margin-top: 2.5rem;
+   }
+
 }
 
 @media (min-width: 62rem) {

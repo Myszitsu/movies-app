@@ -1,1 +1,7 @@
-<p>movies works!</p>
+<section>
+   <div class="grid">
+      <ng-container *ngFor="let movie of movies">
+         <item [itemData]="movie"></item>
+      </ng-container>
+   </div>
+</section>

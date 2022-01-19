@@ -1,0 +1,11 @@
+<ng-container *ngIf="itemData">
+  <div class="card">
+    <img
+    [src]="imageSizes.poster_sizes.medium + itemData.poster_path"
+    [alt]="itemData.title + ' image'"
+      class="card__img"
+    />
+    <p class="card__rating"><i class="m-icon">star</i><span>{{itemData.vote_average}}</span>/10</p>
+    <h2 class="card__title">{{itemData.title}}</h2>
+  </div>
+</ng-container>

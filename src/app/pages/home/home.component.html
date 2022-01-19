@@ -1,4 +1,7 @@
-<carousel [items]="popularMovies"></carousel>
-<slider [items]="upcomingMovies" title="Upcoming" id="upcoming"></slider>
-<slider [items]="popularMovies" title="Popular" id="popular"></slider>
-<slider [items]="topRatedMovies" title="Top Rated" id="topRated"></slider>
+<main>
+   <carousel [items]="popularMovies"></carousel>
+   <item-banner [items]="upcomingMovies" title="Upcoming"></item-banner>
+   <item-banner [items]="popularMovies" title="Popular"></item-banner>
+   <item-banner [items]="topRatedMovies" title="Top Rated"></item-banner>
+</main>
+
