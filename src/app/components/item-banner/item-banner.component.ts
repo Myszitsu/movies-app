@@ -11,7 +11,6 @@ export class ItemBannerComponent {
   @Input()
   items: Movie[] = []
   @Input()
-  title: string = 'Title'
-  
+  title: string = 'Title' 
 
 }

@@ -12,6 +12,7 @@ import { CarouselComponent } from './components/carousel/carousel.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ItemBannerComponent } from './components/item-banner/item-banner.component';
 import { ItemComponent } from './components/item/item.component';
+import { PaginatorModule } from 'primeng/paginator';
 
 @NgModule({
   declarations: [
@@ -22,15 +23,16 @@ import { ItemComponent } from './components/item/item.component';
     MoviesComponent,
     CarouselComponent,
     ItemBannerComponent,
-    ItemComponent,
+    ItemComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
+    PaginatorModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

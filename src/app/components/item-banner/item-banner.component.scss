@@ -24,37 +24,30 @@ section {
 @media (min-width: 30rem) {
    .grid {
       grid-template-columns: repeat(2, 1fr);
+      padding-inline: 1.5rem;
    }
 }
 
-@media (min-width: 46rem) {
+@media (min-width: 40rem) {
    .grid {
-      padding-inline: 1.5rem;
       grid-template-columns: repeat(3, 1fr);
    }
-
-   .title {
-      padding: 1rem 1.5rem;
-      margin: 1.5rem;
-      margin-top: 2.5rem;
-   }
-
 }
 
-@media (min-width: 62rem) {
+
+@media (min-width: 60rem) {
    .grid {
       grid-template-columns: repeat(4, 1fr);
    }
 }
 
-@media (min-width: 76rem) {
+@media (min-width: 80rem) {
    .grid {
-      grid-template-columns: repeat(5, 1fr);
-   }
-}
-@media (min-width: 92rem) {
-   .grid {
-      max-width: 100rem;
       grid-template-columns: repeat(6, 1fr);
+   }
+
+   .title {
+      padding: 1rem 1.5rem;
+      margin-top: 2.5rem;
    }
 }

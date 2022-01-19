@@ -16,7 +16,7 @@ export class MoviesService {
     return this.http.get<MovieDto>(`${this.baseUrl}/movie/${category}?api_key=${this.apiKey}`).pipe(switchMap(response => of(response.results.slice(0, maxResults))))
   }
 
-  searchMovies(category: 'upcoming' | 'popular' | 'top_rated' = 'upcoming', maxResults: number = 12) {
-    return this.http.get<MovieDto>(`${this.baseUrl}/movie/${category}?api_key=${this.apiKey}`).pipe(switchMap(response => of(response.results.slice(0, maxResults))))
+  searchMovies(category: 'upcoming' | 'popular' | 'top_rated' = 'upcoming', page: number = 1) {
+    return this.http.get<MovieDto>(`${this.baseUrl}/movie/${category}?page=${page}&api_key=${this.apiKey}`).pipe(switchMap(response => of(response.results)))
   }
 }

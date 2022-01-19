@@ -19,27 +19,15 @@ section {
    }
 }
 
-@media (min-width: 46rem) {
-   .grid {
-      padding-inline: 1.5rem;
-      grid-template-columns: repeat(3, 1fr);
-   }
-}
-
-@media (min-width: 62rem) {
+@media (min-width: 50rem) {
    .grid {
       grid-template-columns: repeat(4, 1fr);
    }
 }
 
-@media (min-width: 76rem) {
+@media (min-width: 75rem) {
    .grid {
       grid-template-columns: repeat(5, 1fr);
-   }
-}
-@media (min-width: 92rem) {
-   .grid {
-      max-width: 100rem;
-      grid-template-columns: repeat(6, 1fr);
+      padding-inline: 1.5rem;
    }
 }
