@@ -14,9 +14,12 @@ section {
 
 .title {
    padding: 1rem;
+   margin: 1rem;
+   margin-top: 2rem;
+   letter-spacing: .05rem;
+   color: hsl(0%, 0%, 65%);
    background-color: var(--bg-color-light);
    border-radius: .5rem;
-   margin: 2rem 1rem 1rem 1rem;
 }
 
 

@@ -10,11 +10,17 @@
    border: .125rem solid var(--light-grey);
    border-radius: 4px;
    overflow: hidden;
+   cursor: pointer;
+
+   &:hover img{
+      transform: scale(1.05);
+   }
 
    &__img {
       width: 100%;
       aspect-ratio: 0.67;
       object-fit: cover;
+      transition: transform .5s;
    }
 
    &__rating {

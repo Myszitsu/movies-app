@@ -23,12 +23,16 @@ import { IMAGE_SIZES } from '../../constants/image-sizes';
 export class CarouselComponent implements OnInit {
    @Input()
    items: Movie[] = [];
+   @Input()
+   isBanner: boolean = false
    readonly imageSizes = IMAGE_SIZES;
    currentSlideIndex: number = 0;
 
    ngOnInit(): void {
-      setInterval(() => {
-         this.currentSlideIndex = ++this.currentSlideIndex % this.items.length;
-      }, 7000);
+      if (!this.isBanner) {
+         setInterval(() => {
+            this.currentSlideIndex = ++this.currentSlideIndex % this.items.length;
+         }, 7000);         
+      }
    }
 }

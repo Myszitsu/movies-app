@@ -1,7 +1,9 @@
-<main>
-   <carousel [items]="popularMovies"></carousel>
-   <item-banner [items]="upcomingMovies" title="Upcoming"></item-banner>
-   <item-banner [items]="popularMovies" title="Popular"></item-banner>
-   <item-banner [items]="topRatedMovies" title="Top Rated"></item-banner>
-</main>
+   <section class="carousel">
+      <carousel [items]="popularMovies"></carousel>
+   </section>
+   <section class="categories">
+      <item-banner [items]="upcomingMovies" title="Upcoming"></item-banner>
+      <item-banner [items]="popularMovies" title="Popular"></item-banner>
+      <item-banner [items]="topRatedMovies" title="Top Rated"></item-banner>
+   </section>
 
