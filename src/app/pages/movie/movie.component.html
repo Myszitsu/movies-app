@@ -43,11 +43,21 @@
         <div class="videos">
           <ng-container *ngFor="let video of movieVideos">
             <video-embed [key]="video.key" [site]="video.site"></video-embed>
-            <!-- <div class="frame" style="width: 100%; aspect-ratio: 16 / 9; background-color: red;"></div> -->
           </ng-container>
         </div>
       </p-tabPanel>
-      <p-tabPanel header="Photos"> Content 3 </p-tabPanel>
+      <p-tabPanel header="Photos">
+        <div class="images">
+          <ng-container *ngFor="let backdrop of movieBackdrops">
+            <p-image
+              class="image"
+              [src]="imageSizes.backdrop_sizes.large + backdrop.file_path"
+              alt="Image"
+              [preview]='true'
+            ></p-image>
+          </ng-container>
+        </div>
+      </p-tabPanel>
     </p-tabView>
   </section>
 </ng-container>

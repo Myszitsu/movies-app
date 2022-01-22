@@ -55,3 +55,21 @@ export interface MovieVideo {
    id: string;
 }
 
+export interface MovieImagesDto {
+   id: number;
+   backdrops: MovieImage[];
+   posters: MovieImage[]
+}
+
+export interface MovieImage {
+   aspect_ratio: number;
+   file_path: string;
+   height: string;
+   iso_639_1?: string;
+   vote_average: number;
+   vote_count: number;
+   width: number;
+
+
+}
+

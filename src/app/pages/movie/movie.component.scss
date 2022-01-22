@@ -53,7 +53,7 @@
 
       h3 {
          font-size: 1.1rem;
-         width: max-content;
+         width: fit-content;
       }
 
       p {
@@ -78,6 +78,48 @@
   }
 }
 
+.images {
+  width: 100%;
+  place-items: center;
+  display: grid;
+  gap: .8rem;
+
+  p-image {
+    grid-column: span 1;
+    width: 100%;
+    height: 100%;
+    border-radius: .25rem;
+    overflow: hidden;
+    border: .125rem solid transparent;
+    transition: border-color .3s;
+
+    &:hover {
+      border-color: var(--accent-color);
+    }
+  }
+
+}
+
+:host ::ng-deep {
+  p-image {
+
+    span {
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (min-width: 30rem) {
+  .images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (min-width: 42rem) {
   .overview {
     grid-template-areas: 'poster content';
@@ -96,9 +138,18 @@
   }
 }
 
+@media (min-width: 50rem) {
+  .images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
 @media (min-width: 65rem) {
   .videos {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .images {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
